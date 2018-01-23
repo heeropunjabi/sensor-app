@@ -1,0 +1,11 @@
+<div *ngIf="devices==null">
+    <span>Please Wait.. Loading</span>
+</div>
+<div *ngIf="devices!=null">
+<select [(ngModel)]="selectedDevice.id" (input)="onInput($event)">
+  <option *ngFor="let device of devices" value= {{device.id}}>{{device.name}}</option>
+</select>
+
+<app-chart-component [device]="selectedDevice"></app-chart-component>
+
+</div>
