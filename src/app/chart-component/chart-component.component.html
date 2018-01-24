@@ -1,9 +1,13 @@
-<p *ngIf="device.id!=0">
- 
-  {{device.name}} 
+<p *ngIf="device.id!=0" class="selected-device">
+  Selected Device : {{device.name}} 
 </p>
 
 <div *ngIf="loading">
-  PLease wait...
+    <img src="../../assets/loader_3.gif" alt="loading data from server" height="128px" width="128px">
 
 </div>
+
+    <div id='temp_cable_chart' ></div>
+    <div id='temp_air_chart' class='air-chart' ></div>
+
+

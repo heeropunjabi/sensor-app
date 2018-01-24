@@ -2,7 +2,7 @@
     <span>Please Wait.. Loading</span>
 </div>
 <div *ngIf="devices!=null">
-<select [(ngModel)]="selectedDevice.id" (input)="onInput($event)">
+  <select [(ngModel)]="selectedDevice.id" (input)="onInput($event)" class="select-device-dropdown">
   <option *ngFor="let device of devices" value= {{device.id}}>{{device.name}}</option>
 </select>
 

@@ -1,0 +1,10 @@
+.air-chart {
+    margin-top: 10em;
+}
+.selected-device {
+    background: green;
+    height: 1em;
+    color: white;
+    font-size: 23px;
+    padding: 10px;
+}
